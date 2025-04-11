@@ -6,3 +6,4 @@ function areaParede(altura, largura){
 
 areaParede(4, 5) //=20
 areaParede(3, 20) //=60
+
