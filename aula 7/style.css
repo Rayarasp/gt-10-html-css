@@ -1,0 +1,13 @@
+.container .esquerda{
+    height:auto;
+    display: flex;
+    flex-direction: column;align-items: center;
+    justify-content: center;
+}
+
+.container .direita{
+    height:auto;
+    display: flex;
+    flex-direction: column;align-items: center;
+    justify-content: center;
+}
