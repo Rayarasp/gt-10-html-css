@@ -30,7 +30,7 @@ body{
 
 .container .direita .card{
     width: 50%;
-    height: 45%;
+    height: auto
     display: flex;
     flex-direction: column;
     background-color: #202020;
@@ -112,4 +112,31 @@ body{
     color: white;
     font-size: 18px;
     font-weight: bold;
+}
+
+.cotainer .direita .card .fim{
+    display: flex;  
+    width: 100%;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.container .direita .card .fim .linha{
+    width: 100%;
+    height: 1px;
+    background-color: #dbb4af;
+}
+
+.container .direita .card .fim .resultado{
+    width: 100%;
+    display: flex;
+}
+
+.container .direita .card .fim .resultado .esquerda{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

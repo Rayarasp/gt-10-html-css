@@ -22,9 +22,33 @@ function calcularIMC(){
 function calcular(){
     //chama a funçõa de calcularIMC e armazenar o valor
     const imc = calcularIMC()
+    var mensagem = ""
+    //verifica o valor do IMC e armazena a mensagem
+    if(imc < 18.5){
+        mensagem = "Você está abaixo do peso normal"
+    }
 
-    console.log(imc)
+    if(imc >= 18.5 && imc < 24.9){
+        mensagem = "Você está com o peso normal"
+    }
+
+    if(imc >=30 && imc < 34.9){
+        mensagem = "Você está com obesidade grau 1"
+    }
+
+    //renderizar o resultado na div fim
+    fim.innerHTML = `
+    <div class="linha"></div>
+        <div class="resultado">
+            <div class="esquerda">
+                <h2>${imc.toFixed(2)}</h2>
+                <p>Seu IMC</p>
+            </div>
+            <div class="direita">
+            </div>
+        </div>
+        <div class="linha"></div>
+        `
 }
 
-//adicionar evento de click no botão 
 btn.addEventListener("click", calcular)
