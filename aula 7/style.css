@@ -30,7 +30,7 @@ body{
 
 .container .direita .card{
     width: 50%;
-    height: auto
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #202020;

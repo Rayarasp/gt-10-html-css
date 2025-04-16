@@ -25,17 +25,24 @@ function calcular(){
     var mensagem = ""
     //verifica o valor do IMC e armazena a mensagem
     if(imc < 18.5){
-        mensagem = "Você está abaixo do peso normal"
+        mensagem = "Você está baixo do peso"
     }
 
     if(imc >= 18.5 && imc < 24.9){
         mensagem = "Você está com o peso normal"
     }
 
-    if(imc >=30 && imc < 34.9){
+    if(imc >= 25 && imc < 29.9){
+        mensagem = "Você está sobrepeso"
+    }
+
+    if(imc >= 30 && imc < 34.9){
         mensagem = "Você está com obesidade grau 1"
     }
 
+    if(imc >= 35 && imc < 39.9){
+        mensagem = "Você está com obesidade grau 2"
+    }
     //renderizar o resultado na div fim
     fim.innerHTML = `
     <div class="linha"></div>
@@ -45,6 +52,7 @@ function calcular(){
                 <p>Seu IMC</p>
             </div>
             <div class="direita">
+                <p>${mensagem}</p>
             </div>
         </div>
         <div class="linha"></div>
